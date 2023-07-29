@@ -1,19 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
 import SolutionsDetails from "../components/SolutionsDetails";
 import AddSolution from "../components/AddSolution";
+import Main from "../layouts/Main";
+import Home from "../pages/home/home/Home";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-  },
-  {
-    path: `/solution/:id`,
-    element: <SolutionsDetails />,
-  },
-  {
-    path: "/add-solution",
-    element: <AddSolution />,
+    element: <Main />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: `/solution/:id`,
+        element: <SolutionsDetails />,
+      },
+      {
+        path: "/add-solution",
+        element: <AddSolution />,
+      },
+    ],
   },
 ]);
