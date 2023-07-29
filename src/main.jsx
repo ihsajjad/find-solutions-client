@@ -1,26 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import SolutionsDetails from "./components/SolutionsDetails.jsx";
-import AddSolution from "./components/AddSolution.jsx";
+import { RouterProvider } from "react-router-dom";
 import AuthProvider from "./providers/AuthProvider.jsx";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: `/solution/:id`,
-    element: <SolutionsDetails />,
-  },
-  {
-    path: "/add-solution",
-    element: <AddSolution />,
-  },
-]);
+import { router } from "./router/Router";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
