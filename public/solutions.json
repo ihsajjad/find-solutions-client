@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Error 404: Page Not Found",
+    "solution": "To fix the Error 404, ensure that the requested URL exists and the server is correctly configured to handle it.",
+    "video_link": "https://www.example.com/error_404_video",
+    "blog_link": "https://www.example.com/error_404_blog"
+  },
+  {
+    "title": "TypeError: Cannot read property 'X' of undefined",
+    "solution": "The 'TypeError: Cannot read property 'X' of undefined' occurs when you try to access a property of an undefined object. To solve it, check if the object exists before accessing its properties.",
+    "video_link": "https://www.example.com/type_error_video",
+    "blog_link": "https://www.example.com/type_error_blog"
+  },
+  {
+    "title": "SyntaxError: Unexpected token Y",
+    "solution": "The 'SyntaxError: Unexpected token Y' is typically due to a syntax mistake in your code. Double-check the line indicated in the error message and fix any syntax errors.",
+    "video_link": "https://www.example.com/syntax_error_video",
+    "blog_link": "https://www.example.com/syntax_error_blog"
+  }
+]
