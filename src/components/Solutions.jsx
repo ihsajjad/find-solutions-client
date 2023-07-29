@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { FaGoogle } from "react-icons/fa";
 
 const Solutions = () => {
   const [solutions, setSolutions] = useState([]);
@@ -31,6 +32,9 @@ const Solutions = () => {
         >
           Add Solution
         </Link>
+        <div>
+          <FaGoogle />
+        </div>
       </div>
       <h2 className="text-xl font-bold">Results matched: {solutions.length}</h2>
 
